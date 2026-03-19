@@ -1,0 +1,120 @@
+body {
+    background-color: #141414;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.card {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    width: 400px; /* Un poco más ancha para que quepan los botones */
+}
+
+h1 { 
+    text-align: center;
+    color: #00bcd4; 
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+.mt-20 { margin-top: 20px; }
+
+.entrada {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #252525;
+    color: white;
+}
+
+#btnAgregar {
+    background-color: #00bcd4;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* --- Layout de la sección de completadas --- */
+.encabezado-completadas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#btnLimpiar {
+    background: none;
+    border: none;
+    color: #ff5252;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+#btnLimpiar:hover { color: #ff1744; }
+
+/* --- Estilo de las listas y tareas --- */
+ul { padding: 0; }
+
+li {
+    background: #2c2c2c;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+/* Contenedor para agrupar los botones de la tarea */
+.acciones {
+    display: flex;
+    gap: 5px;
+}
+
+/* Botones individuales de cada tarea */
+.btn-borrar {
+    background: #ff5252;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-completar {
+    background: #4caf50; /* Verde para completar */
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilo visual para cuando se pasa a la lista de completadas */
+.tarea-completa {
+    color: #888;
+    text-decoration: line-through;
+    opacity: 0.7;
+}

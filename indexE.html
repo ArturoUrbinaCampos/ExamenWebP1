@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Examen: Mi Lista de Tareas</title>
+    <link rel="stylesheet" href="styleE.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>Lista de Tareas 🦾</h1>
+        
+        <div class="entrada">
+            <input type="text" id="inputTarea" placeholder="Escribe una tarea...">
+            <button id="btnAgregar">Añadir</button>
+        </div>
+
+        <div class="seccion-tareas">
+            <h2>Pendientes</h2>
+            <ul id="listaPendientes"></ul>
+        </div>
+
+        <div class="seccion-tareas mt-20">
+            <div class="encabezado-completadas">
+                <h2>Completadas</h2>
+                <button id="btnLimpiar">Limpiar todas</button>
+            </div>
+            <ul id="listaCompletadas"></ul>
+        </div>
+    </div>
+
+    <script src="scriptE.js"></script>
+</body>
+</html>
